@@ -26,6 +26,7 @@
     />
     </noscript>
 
+
     <style>
       * {
         font-family: "Josefin Sans", sans-serif;
@@ -38,10 +39,21 @@
         background-image: url("./imgs/padded-min.png");
         color: white;
         font-size:12px;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
       }
 
       .text-center {
         text-align: center;
+      }
+
+      .text-right {
+        text-align: right;
       }
 
       .icons span {
@@ -59,7 +71,7 @@
       }
 
       .card {
-        background-color: #0f1015;
+        background-color: #0f10159e;
         border: 1px solid #222222;
         border-radius: 2px;
         padding: 20px;
@@ -74,6 +86,11 @@
         font-size: 40px;
         margin:10px;
       }
+
+      .passion {
+        border-radius: 10px;
+    margin: 20px;
+      }
     </style>
   </head>
   <body>
@@ -86,30 +103,31 @@
           height="150px"
           alt="Avatar Photo"
         />
-      </div>
-      <div class="text-center icons">
-        <a href="https://www.linkedin.com/in/nenuadrian/" target="_blank" rel="nofollow" aria-label="Linkedin Link">
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/nenuadrian/" title="Linkedin" target="_blank" rel="nofollow" aria-label="Linkedin Link">
         <span class="fa-brands fa-linkedin-in"></span>
       </a>
-      <a href="https://github.com/nenuadrian" target="_blank" rel="nofollow" aria-label="Github Link">
+      <a href="https://github.com/nenuadrian" target="_blank" title="Github"  rel="nofollow" aria-label="Github Link">
         <span class="fa-brands fa-github"></span>
         </a>
-        <a href="https://medium.com/@adriannenu" target="_blank" rel="nofollow" aria-label="Medium Articles Link">
-        <span class="fa-brands fa-medium"></span>
+        <a href="https://medium.com/@adriannenu" target="_blank" title="Medium articles"  rel="nofollow" aria-label="Medium Articles Link">
+        <span class="fab fa-medium"></span>
         </a>
-        <a href="https://www.instagram.com/cardinal.photograph" target="_blank" rel="nofollow" aria-label="Instagram Link">
+        <a href="https://www.instagram.com/cardinal.photograph" title="Instagram"  target="_blank" rel="nofollow" aria-label="Instagram Link">
         <span class="fa-brands fa-instagram"></span>
         </a>
-        <a href="https://500px.com/p/cardinal_design?view=photos" target="_blank" rel="nofollow" aria-label="500px photography Link">
+        <a href="https://500px.com/p/cardinal_design?view=photos" title="500px portfolio"  target="_blank" rel="nofollow" aria-label="500px photography Link">
         <span class="fa-brands fa-500px"></span>
         </a>
       </div>
+    </div>
+
       
       <div class="row">
         <div class="col-12">
           <div class="card">
             <p>
-              Hello! I'm Adrian. A passionate full-stack developer, excited to
+              Hello! I'm <strong>Adrian</strong>. A passionate full-stack developer, excited to
               work on technology at scale that brings positive changes in
               society.
             </p>
@@ -126,7 +144,9 @@
         <div class="card">
             <p>The computer programmer is a creator of universes for which he alone is the lawgiver. No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or field of battle and to command such unswervingly dutiful actors or troops</p>
             <br/>
+            <div class="text-right">
             <strong><em>Joseph Weizenbaum</em></strong>
+          </div>
          </div>        </div>
 
 
@@ -160,7 +180,7 @@
             <span class="fa-solid fa-gamepad"></span>
             <h3>Game Development
             </h3>
-            <p>I have been pursuing understanding of the immense complexity behind games played by millions for many years. See my go at a game engine!
+            <p>I find understanding immense complexity behind games played by millions fascinating, both in terms of graphics and scalability.
             </p>
           </div>
         </div>
@@ -179,5 +199,16 @@
         
       </div>
     </div>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-86184239-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-86184239-1');
+</script>
+
   </body>
 </html>
